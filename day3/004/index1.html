@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #hn {
+            color: red;
+        }
+        
+        #hcm {
+            color: yellow;
+        }
+
+        #dn {
+            color: green;
+        }
+
+        #ct {
+            color: pink;
+        }
+
+        #hp {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Thuộc tính id trong html và ứng dụng của nó
+        Vấn đề như sau : có 5 thẻ p chứa 5 tỉnh thành khác nhau
+        thẻ p chứa ha noi ( màu đỏ )
+        thẻ p chứa ho chi minh ( màu vàng )
+        thẻ p chứa da nang ( màu xanh )
+        thẻ p chứa can tho ( màu hồng )
+        thẻ p chứa hai phong ( màu da cam )
+        Nếu sử dụng selector ( bộ chọn ) theo tên thẻ thì không làm được
+        Nếu sử dụng dạng Inline style thì sẽ làm được
+        Nhưng nếu sử dụng Internal style thì không thể sử dụng selector là p được
+        do cả 5 thẻ đều là thẻ p
+
+        Kết luận : trong html cung cấp 1 thuộc tính html có tên id
+        thuộc tính này có tác dụng định dang cho 1 thẻ html là duy nhất
+        và không được phép trùng lặp
+        đơn giản tưởng tượng thẻ là người trong cuộc sống
+        còn id giống số chứng minh thư
+
+        Giá trị id phải viết liền và không có dấu cố gắng viết ngắn gọn nhất có thể
+
+        Chú ý khi html có thuộc tính thì mình viết code css sẽ sử dụng 1 loại
+        selector ( bộ chọn ) id tương ứng
+        =>
+        #id {
+            code css
+        }
+    </pre>
+
+    <p id="hn">hà nội</p>
+    <p id="hcm">hồ chí minh</p>
+    <p id="dn">đà nẵng</p>
+    <p id="ct">cần thơ</p>
+    <p id="hp">hải phòng</p>
+
+
+</body>
+</html>
