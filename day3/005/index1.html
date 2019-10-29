@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .mienbac {
+            background-color: green;
+        }
+
+        .mientrung {
+            background-color: yellow;
+        }
+
+        .miennam {
+            background-color: orange;
+        }
+
+        .top1thanhpho {
+            color: red;
+            font-size: 38px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Thuộc tính class trong html và ứng dụng của nó
+        Vấn đề : 9 thẻ p chứa các tỉnh thành phố thuộc 3 miền VN
+        => 3 tỉnh miền bắc có màu nền xanh
+        => 3 tỉnh miền trung có màu nền vàng
+        => 3 tỉnh miền nam có màu nền da cam
+        Giải pháp : sử dụng thuộc tính class  trong html để gom các thẻ html thành
+        1 nhóm mong muốn
+        và trong css để selector vào class của html thì sẽ sử dụng cú pháp
+        .class {
+            code css
+        }
+        Chú ý là giá trị của class phải viết liền không dấu
+        Chú ý là 1 thẻ html chỉ được phép có id 1 id duy nhất
+        nhưng 1 thẻ html thì được phép sử dụng nhiều class
+        mỗi class sẽ được phân tách bằng cách khoảng trắng
+        ví dụ : p class="class1 class2 class3 class4"
+
+        Yêu cầu 2 : ngoài việc đặt màu nền theo miền của VN
+        bây giờ các tỉnh thành phố trực thuộc trung ương sẽ đặt màu chữ là màu đỏ
+    </pre>
+
+
+    <p id="hn" class="mienbac top1thanhpho">Hà nội</p>
+    <p id="hp" class="mienbac">Hải phòng</p>
+    <p id="nd" class="mienbac">Nam định</p>
+
+    <p id="th" class="mientrung">Thanh hóa</p>
+    <p id="na" class="mientrung">Nghệ an</p>
+    <p id="ht" class="mientrung">Hà tĩnh</p>
+
+    <p id="ct" class="miennam">Cần thơ</p>
+    <p id="vl" class="miennam">Vĩnh long</p>
+    <p id="hcm" class="miennam top1thanhpho">Hồ chí minh</p>
+
+
+</body>
+</html>
