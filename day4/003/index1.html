@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #box1 {
+            width: 800px;
+            height: 800px;
+            background-image: url("Bulldog_02.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: yellow;
+            border: 1px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    <pre>
+        Cách viết tất cả các thuộc tính css liên quan đến nền thành 1 thuộc tính duy
+        nhất . Chúng ta có các thuộc tính css liên quan đến nền như sau :
+        1 background-color ( màu nền )
+        2 background-image ( ảnh nền )
+        3 background-repeat( lặp ảnh nền )
+        4 background-position ( vị trí ảnh nền )
+        5 background-attachment ( cố định ảnh nền hay không )
+        Bây giờ việc viết 5 dòng này sẽ có thể gộp lại thành 1 dòng duy nhất
+        bằng thuộc tính background theo công thức sau :
+        background : A B C D E;
+        trong đó
+        A là giá trị của thuộc tính background-color
+        B là giá trị của thuộc tính background-image
+        C là giá trị của thuộc tính background-repeat
+        D là giá trị của thuộc tính background-attachment
+        E là giá trị của thuộc tính background-position
+        Nếu không cần thuộc tính nào trong 5 thuộc tính nền trên thì bạn có thể
+        bỏ đi miễn là đúng thứ tự bên trên .
+    </pre>
+
+    <div id="box1">
+        Nội dung thẻ div
+    </div>
+
+</body>
+</html>
