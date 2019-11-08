@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <style type="text/css">
+        @font-face {
+            font-family: "Lato123";
+            src: url("fonts/Lato/Lato-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: "Open Sans123";
+            src: url("fonts/Open_Sans/OpenSans-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: "Roboto123";
+            src: url("fonts/Roboto/Roboto-Regular.ttf");
+        }
+
+
+        #demo-lato {
+            font-family: "Lato123", sans-serif;
+        }
+
+        #demo-opensans {
+            font-family: "Open Sans123", sans-serif;
+        }
+
+        #demo-roboto {
+            font-family: "Roboto123", sans-serif;
+        }
+
+    </style>
 </head>
 <body>
     <pre>
         css3 web fonts
+        Bước 1 : khai báo tên font mới và đường dẫn cho font đó bằng việc sử dụng
+        cú pháp @font-face
+
+        khai báo tên font mới
+         @font-face {
+            font-family: "Lato123";
+            src: url("fonts/Lato/Lato-Regular.ttf");
+        }
+        trong đó font-family: "Lato123"; ( khai báo tên font )
+        src khai báo đường dẫn của font
     </pre>
+
+    <h1 id="demo-lato">Demo Lato</h1>
+    <h1 id="demo-opensans">Demo OpenSans</h1>
+    <h1 id="demo-roboto">Demo Roboto</h1>
 </body>
 </html>
