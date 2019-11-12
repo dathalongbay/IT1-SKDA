@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header #top {
+    width: 800px;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+header #top h1 {
+    float: left;
+}
+header #top nav {
+    float: left;
+}
+header #top nav ul {
+    list-style-type: none;
+    overflow: auto;
+}
+
+header #top nav ul li {
+    float: left;
+}
+
+header #top nav ul li a{
+    display: inline-block;
+    padding: 15px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #444444;
+    font-weight: bold;
+}
+
+header #top nav ul li:hover a {
+    color: rgb(4, 178, 247);
+    border-bottom: 2px solid rgb(4, 178, 247);
+}
+
+header #ads img{
+    width: 100%;
+
+}
