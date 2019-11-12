@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #sidebar {
+            background-color: #FFA500;
+            width: 250px;
+            height: 250px;
+            float: left;
+        }
+
+        #content {
+            background-color: greenyellow;
+            height: 250px;
+            width: 400px;
+            float: right;
+        }
+
+        .container {
+            background: #ff402f;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        kỹ thuật clearfix
+        khi 1 thẻ cha chứa các thẻ con
+        nếu có 2 thẻ con nào đó được float sang trái và sang phải
+        hoặc cả 2 đều float:left hay cùng float:right
+        mà thẻ cha không có 1 chiều cao cụ thể
+        thì sẽ xảy ra hiện tượng "thẻ cha không chứa được thẻ con"
+        để khắc phục điều này ta sử dụng kỹ thuật "clearfix"
+    </pre>
+
+    <div class="container">
+        <div id="sidebar">
+            sidebar
+        </div>
+        <div id="content">
+            content
+        </div>
+    </div>
+
+
+</body>
+</html>
