@@ -5,23 +5,20 @@
     <title>Title</title>
 
     <style type="text/css">
-        li {
-            background-color: orange;
-            width: 100px;
+        #sidebar {
+            background-color: chartreuse;
+            float: left;
+            width: 50%;
         }
 
-        a {
-            color: white;
-        }
-
-        #li1 {
-            float: right;
+        #content {
+            background-color: violet;
         }
     </style>
 </head>
 <body>
 
-    <pre>
+<pre>
         thuộc tính float trong css
         float có nghĩa là trôi
         float có 3 giá trị
@@ -30,19 +27,18 @@
         float: none; không trôi ( mặc định )
         khi 1 thẻ float:left hay float:right nó sẽ kéo các thẻ bên cạnh nó trôi sang trái
         hay sang phải nếu vẫn còn diện tích
+        chú ý các thẻ bị kéo lên là những thẻ có độ rộng không xác định
+        nếu có độ rộng xác định thẻ sẽ không bị kéo lên
     </pre>
 
-    <nav>
-        <ul>
-            <li id="li1"><a href="#">Hà nội</a></li>
-            <li><a href="#">Quảng ninh</a></li>
-            <li><a href="#">Hải phòng</a></li>
-            <li><a href="#">Nam định</a></li>
-            <li><a href="#">Ninh bình</a></li>
-            <li><a href="#">Hà nam</a></li>
-            <li><a href="#">Thanh hóa</a></li>
-        </ul>
-    </nav>
+<div class="container">
+    <div id="sidebar">
+        Sidebar
+    </div>
+    <div id="content">
+        Main content
+    </div>
+</div>
 
 </body>
 </html>
