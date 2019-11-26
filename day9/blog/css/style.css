@@ -1,0 +1,33 @@
+.main-beader {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 16px 0;
+}
+
+
+.main-beader .subscribe-container {
+    padding-top: 4px;
+}
+
+.main-beader .subscribe {
+    color: #6c757d;
+}
+
+
+.main-beader .logo {
+    font-size: 2.25rem;
+    color: #343a40 !important;
+}
+
+.main-beader .logo-container {
+    text-align: center;
+}
+
+.main-beader .logo:hover {
+    text-decoration: none;
+}
+
+.main-beader .register {
+    border: 1px solid #6c757d;
+    float: right;
+}
