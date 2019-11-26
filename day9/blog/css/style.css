@@ -31,3 +31,23 @@
     border: 1px solid #6c757d;
     float: right;
 }
+
+.navigation li a {
+    padding: 8px;
+    color: #6c757d;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.banner {
+    background-image: url("php.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 350px;
+}
+
+.banner h1{
+
+}
