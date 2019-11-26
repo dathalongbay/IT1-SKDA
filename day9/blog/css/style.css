@@ -49,5 +49,30 @@
 }
 
 .banner h1{
-
+    width: 70%;
+    color: white;
+    font-size: 32px;
+    padding: 50px;
 }
+
+
+.feature-post-row {
+    margin: 48px 0;
+}
+
+.feature-post-row img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.feature-post .feature-post-content {
+    width: 60%;
+    float: left;
+}
+
+.feature-post .featute-post-thumbnail {
+    width: 40%;
+    float: left;
+}
+
