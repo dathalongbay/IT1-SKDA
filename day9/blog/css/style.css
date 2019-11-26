@@ -1,3 +1,9 @@
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .main-beader {
     line-height: 1;
     border-bottom: 1px solid #e5e5e5;
@@ -60,19 +66,47 @@
     margin: 48px 0;
 }
 
+
 .feature-post-row img {
     max-width: 100%;
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featute-post-thumbnail {
+    height: 100%;
+}
+
+.feature-post-inner {
+    border: 1px solid #dee2e6!important;
+
 }
 
 .feature-post .feature-post-content {
     width: 60%;
     float: left;
+    padding: 24px;
 }
 
 .feature-post .featute-post-thumbnail {
     width: 40%;
     float: left;
+}
+
+
+
+.blog-item {
+    margin: 20px 0;
+}
+
+
+footer {
+    min-height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    background-color: #6c757d;;
 }
 
