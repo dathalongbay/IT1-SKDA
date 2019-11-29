@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        Hàm trong js ( function )
+        Khái niệm tham số
+        Truyền tham số
+        Gọi hàm
+
+
+        Hàm là 1 tập hợp gồm nhiều lệnh để thực hiện 1 chức năng
+        ví dụ như hàm tính chu vi hình tròn , tính diện tích hình tròn
+        đổi nhiệt độ C ra độ F , đổi dặm ra KM , đổi galon ra lít ...
+
+        tại sao lại sử dụng hàm : hàm nó cho phép tái sử dụng lại mã nguồn
+        nhằm giảm thiểu số lượng các câu lệnh và nhanh chóng thực hiện
+        1 chức năng mà không cần phải viết đi viết lại nhiều lần
+
+        function tên hàm (tham số 1 = giá trị mặc định, tham số 2 ...) {
+            // các câu lệnh của hàm
+
+            // có thể có câu lệnh return trả về nếu muốn trả về kết quả
+            // hoặc không return
+
+            // chú ý trong hàm câu lệnh return sẽ kết thúc hàm
+            // các câu lệnh viết sau return sẽ không chạy
+        }
+
+        => gọi hàm
+        tên hàm (biến 1, biến số 2);
+
+        Bài tập :
+        xây dựng 1 function dùng để tính điểm trung bình cho học sinh
+        với 3 môn : toán , lý , hóa , năng khiếu
+        trong đó công thức tính điểm TB
+        điểm TB = toán + lý + hóa + (điểm năng khiếu * 2)/ 5;
+    </pre>
+
+    <script type="text/javascript">
+
+        function tinhdientichhinhtron(bankinh = 1) {
+            // tham số trong function sẽ là biến cục bộ
+            // chỉ có ảnh hưởng trong fucntion
+
+            // biến được khai báo trong function cũng là biến cục bộ
+            var dientich = 3.14 * bankinh * bankinh;
+
+            return dientich;
+        }
+
+
+        // những biến bên ngoài function là biến toàn cục
+        var r = 12;
+        var ketqua1 = tinhdientichhinhtron(r);
+
+        console.log(ketqua1);
+
+        //
+
+        var ketqua2 = tinhdientichhinhtron();
+        console.log(ketqua2);
+
+    </script>
+</body>
+</html>
