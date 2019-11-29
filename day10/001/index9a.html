@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        Sự kiện trong javascript
+        - Sự kiện onclick ( click chuột )
+        - Sự kiện onsubmit ( gửi dữ liệu từ form đi ) ...
+    </pre>
+
+    <form name="dtb" method="post" action="">
+        <p>
+            <label>toán</label>
+            <input type="text" id="toan" name="toan" value="">
+        </p>
+
+        <p>
+            <label>lý</label>
+            <input type="text" id="ly" name="ly" value="">
+        </p>
+
+        <p>
+            <label>hóa</label>
+            <input type="text" id="hoa" name="hoa" value="">
+        </p>
+
+        <p>
+            <label>năng khiếu</label>
+            <input type="text" id="nangkhieu" name="nangkhieu" value="">
+        </p>
+    </form>
+
+    <p>
+        Kết quả : ?
+    </p>
+    <button onclick="tinhtoan();">Điểm trung bình</button>
+
+    <script type="text/javascript">
+
+
+        function diemtrungbinh(toan, ly , hoa, nangkhieu) {
+            toan = parseInt(toan);
+            ly = parseInt(ly);
+            hoa = parseInt(hoa);
+            nangkhieu = parseInt(nangkhieu);
+
+            console.log(toan);
+            console.log(ly);
+            console.log(hoa);
+            console.log(nangkhieu);
+
+            var dtb = ((toan + ly + hoa) + (nangkhieu * 2))/5;
+            return dtb;
+        }
+
+        function tinhtoan() {
+            var t = document.getElementById("toan").value;
+            var h = document.getElementById("hoa").value;
+            var l = document.getElementById("ly").value;
+            var nk = document.getElementById("nangkhieu").value;
+
+            var kq = diemtrungbinh(t,l,h,nk);
+
+            alert(kq);
+        }
+
+
+
+    </script>
+
+</body>
+</html>
