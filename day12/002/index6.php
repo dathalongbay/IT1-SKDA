@@ -6,5 +6,18 @@
 </head>
 <body>
     <h1>Vòng lặp for PHP lệnh break</h1>
+
+    <?php
+    $i = 2;
+    for ($i; $i <= 20; $i = $i + 2) {
+
+        if ($i == 10) {
+            break;
+        }
+        echo "<br>cách 1 : " . $i;
+    }
+
+
+    ?>
 </body>
 </html>
