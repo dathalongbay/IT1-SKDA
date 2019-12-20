@@ -17,6 +17,19 @@
 </head>
 <body>
 
+    <?php
+
+    echo "<pre>";
+    print_r($_POST);
+    echo "</pre>";
+    if (!empty($_POST) && isset($_POST["usd"]) && isset($_POST["tygia"])) {
+        $usd = $_POST["usd"];
+        $tygia = $_POST["tygia"];
+        $vnd = $usd*$tygia;
+        echo "<div>Quy đổi : " . $vnd . " VND ";
+    }
+    ?>
+
     <div class="page-wrap">
         <form name="demo" action="" method="post">
             <p>
