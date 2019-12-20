@@ -24,15 +24,53 @@
 </pre>
 
 
+<?php
+
+echo "<pre>";
+print_r($_POST);
+echo "</pre>";
+
+$cannang = $chieucao = "";
+if (isset($_POST["cannang"]) && isset($_POST["chieucao"])) {
+    $cannang = $_POST["cannang"];
+    $chieucao = $_POST["chieucao"];
+    $bmi = $cannang/($chieucao*$chieucao);
+    if ($bmi > 0) {
+        if ($bmi < 18.5) {
+            echo "<br> Phân loại : Gầy";
+            echo "<br> Nguy cơ : Thấp";
+        } elseif ($bmi >= 18.5 && $bmi <= 24.9) {
+            echo "<br> Phân loại : Bình thường";
+            echo "<br> Nguy cơ : trung bình";
+        } elseif ($bmi >= 25 && $bmi <= 29.9) {
+            echo "<br> Phân loại : Hơi béo";
+            echo "<br> Nguy cơ : cao";
+        } elseif ($bmi >= 30 && $bmi <= 34.9) {
+            echo "<br> Phân loại : béo phì độ 1";
+            echo "<br> Nguy cơ : cao";
+        } elseif ($bmi >= 35 && $bmi <= 39.9) {
+            echo "<br> Phân loại : béo phì độ 2";
+            echo "<br> Nguy cơ : rất cao";
+        } else {
+            echo "<br> Phân loại : béo phì độ 3";
+            echo "<br> Nguy cơ : nguy hiểm";
+        }
+
+    } else {
+        echo "<br> Chỉ số BMI bị âm không hợp lệ";
+    }
+}
+?>
+
 <div class="page-wrap">
     <form name="demo" action="" method="post">
         <p>
             <label>Cân nặng ( kilogam )</label>
-            <input type="text" name="cannang" value="" placeholder="Nhập cân nặng">
+            <input type="text" name="cannang" value="<?php echo $cannang ?>" placeholder="Nhập cân nặng">
         </p>
         <p>
             <label>Chiều cao ( tính bằng mét ) </label>
-            <input type="text" name="chieucao" value="" placeholder="Nhập chiều cao">
+            <input type="text" name="chieucao" value="<?php echo $chieucao ?>" placeholder="Nhập chiều cao">
         </p>
         <p>
             <input type="submit" name="submit" value="tính BMI">
