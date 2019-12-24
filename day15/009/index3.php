@@ -1,4 +1,7 @@
 <?php
+/**
+ * Cách kết nối đến CSDL theo dạng hướng đối tượng
+ */
 $servername = "localhost";
 $username = "root";
 $password = "";
