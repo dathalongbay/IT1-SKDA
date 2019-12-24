@@ -54,6 +54,22 @@
         Ví dụ :
             INSERT INTO MyGuests (firstname, lastname, email)
             VALUES ('John', 'Doe', 'john@example.com')
+
+
+        => CÂU LỆNH SELECT ( LẤY DỮ LIỆU TỪ BẢNG )
+        CÚ PHÁP : SELECT TÊN_CỘT_1, TÊN_CỘT_2, TÊN_CỘT_3 ... FROM TÊN_BẢNG
+        NẾU MUỐN LẤY TẤT CẢ CÁC CỘT THÌ VIẾT
+        SELECT * FROM TÊN_BẢNG
+        VÍ DỤ :
+        SELECT * FROM myguests ( CHỌN TẤT CẢ )
+        SELECT firstname, lastname, email FROM myguest
+        => khi muốn select dữ liệu theo điều kiện ta dùng mệnh đề where
+        cú pháp : SELECT TÊN_CỘT_1, TÊN_CỘT_2, TÊN_CỘT_3 ... FROM TÊN_BẢNG WHERE ĐIỀU_KIỆN
+        VÍ DỤ :
+        SELECT * FROM myguests WHERE id > 5;
+        SELECT * FROM myguests WHERE id = 5;
+        SELECT * FROM myguests WHERE id < 5;
+        SELECT * FROM myguests WHERE firstname = 'nguyen van';
     </pre>
 </body>
 </html>
