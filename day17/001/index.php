@@ -61,9 +61,9 @@ echo "</pre>";
                         <td><?php echo $sinhvien["diem"] ?></td>
                         <td><?php echo $sinhvien["truong"] ?></td>
                         <td>
-                            <a href="view.php" class="btn btn-success">Xem chi tiết</a>
-                            <a href="edit.php" class="btn btn-warning">Sửa</a>
-                            <a href="delete.php" class="btn btn-danger">Xóa</a>
+                            <a href="view.php?id=<?php echo $sinhvien["id"] ?>" class="btn btn-success">Xem chi tiết</a>
+                            <a href="edit.php?id=<?php echo $sinhvien["id"] ?>" class="btn btn-warning">Sửa</a>
+                            <a href="delete.php?id=<?php echo $sinhvien["id"] ?>" class="btn btn-danger">Xóa</a>
                         </td>
                     </tr>
                     <?php } ?>

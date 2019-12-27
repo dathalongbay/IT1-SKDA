@@ -1,3 +1,39 @@
+<?php
+// Nạp file kết nối cơ sở dữ liệu
+include_once "connect.php";
+
+// gọi đến kết nối CSDL thì dùng $connectMysql
+if (!isset($_GET["id"]) || ($_GET["id"] < 1)) {
+    echo "id sinh viên không hợp lê";
+    exit;
+}
+
+var_dump($connectMysql);
+$sql = "SELECT * FROM sinhvien WHERE id=". (int) $_GET["id"];
+echo "<br>".$sql;
+$stmt = $connectMysql->prepare($sql);
+$stmt->execute();
+
+$data = $stmt->fetchAll();
+if (isset($data[0])) {
+    $sinhvien = $data[0];
+} else {
+    echo "không lấy được data";
+    exit;
+}
+
+echo "<pre>";
+print_r($data);
+echo "</pre>";
+
+if (!isset($sinhvien["id"]) || ($sinhvien["id"] < 1)) {
+    echo "dữ liệu không hợp lệ";
+    exit;
+}
+echo "<pre>";
+print_r($sinhvien);
+echo "</pre>";
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,18 +52,23 @@
     <div class="row">
         <div class="col-md-12">
 
-            <form name="create" action="" method="post">
+            <form name="create" action="remove.php" method="post">
+
+                <input type="hidden" name="id" value="<?php echo $sinhvien["id"] ?>" />
                 <div class="form-group">
                     <label>Tên sinh viên:</label>
+                    <?php echo $sinhvien["ten"] ?>
                 </div>
                 <div class="form-group">
                     <label>Điểm:</label>
+                    <?php echo $sinhvien["diem"] ?>
                 </div>
                 <div class="form-group">
                     <label>Trường đại học:</label>
+                    <?php echo $sinhvien["truong"] ?>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Xóa</button>
             </form>
 
         </div>
