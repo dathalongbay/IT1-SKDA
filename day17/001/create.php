@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-md-12">
 
-                <form name="create" action="" method="post">
+                <form name="create" action="save.php" method="post">
                     <div class="form-group">
                         <label>Tên sinh viên:</label>
                         <input type="text" name="ten" class="form-control" placeholder="">

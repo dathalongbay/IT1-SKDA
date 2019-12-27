@@ -3,6 +3,8 @@
 include_once "connect.php";
 
 // gọi đến kết nối CSDL thì dùng $connectMysql
+
+var_dump($connectMysql);
 ?>
 
 <!doctype html>
