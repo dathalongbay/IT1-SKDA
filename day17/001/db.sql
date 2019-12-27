@@ -1,0 +1,8 @@
+CREATE DATABASE quanlysinhvien;
+
+CREATE TABLE sinhvien (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    ten VARCHAR(30) NOT NULL,
+    diem INT(11) NOT NULL,
+    truong VARCHAR(50)
+);
