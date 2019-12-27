@@ -54,7 +54,7 @@ echo "</pre>";
                     <tbody>
 
 
-                    <?php foreach($data as $i => $sinhvien) : ?>
+                    <?php foreach($data as $i => $sinhvien) { ?>
                     <tr>
                         <td><?php echo $sinhvien["id"] ?></td>
                         <td><?php echo $sinhvien["ten"] ?></td>
@@ -66,7 +66,7 @@ echo "</pre>";
                             <a href="delete.php" class="btn btn-danger">Xóa</a>
                         </td>
                     </tr>
-                    <?php endforeach; ?>
+                    <?php } ?>
 
 
 
