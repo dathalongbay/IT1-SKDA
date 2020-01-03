@@ -30,7 +30,7 @@
 
     <?php
     setcookie("userphone", "0981234567", time() + (86400*30), "/" );
-    
+
     // truy cập vào cookie
     echo "<pre>";
     print_r($_COOKIE);
