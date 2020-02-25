@@ -1,0 +1,12 @@
+class là lớp trong trong php
+object là đối tượng được khởi tạo từ 1 class
+ví dụ :
+xe vinfast khởi tạo từ class oto
+sinh viên tên nam khởi tạo class sinhvien
+- trong class có thuộc tính ( property )
+có phương thức ( method )
+- thuộc tính thường chỉ ra đặc điểm tính chất class
+- phương thức chỉ ra hành động cụ thể của class
+class Oto
+thuộc tính là màu sắc , giá cả , thương hiệu ...
+phương thức là khởi động , chạy , phanh , tăng tốc ...
