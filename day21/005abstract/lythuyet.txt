@@ -1,0 +1,12 @@
+
+***
+Abstract class ( lớp trừu tượng )
+Abstract method ( phương thức trừu tượng )
+Abstract class có ít nhất 1 phương thức abstract
+để khai báo Abstract class hay Abstract method cần có từ khóa abstract
+
+class Abstract chỉ khai báo tên phương thức abstract mà không có code thực thi
+trong method đấy
+Class con kế thừa class Abstract bắt buộc phải thực thi cho abstract method
+của class cha
+
