@@ -1,0 +1,30 @@
+- giới hạn truy cập thuộc tính và phương thức trong class
+* public : công khai - tất cả các thuộc tính và phương thức có từ khóa
+public khi khai báo thì có thể gọi được ở mọi nơi
+- trong class
+- ngoài class
+- từ class con kế thừa
+* protected : kế thừa  tất cả các thuộc tính và phương thức có từ khóa
+ protected khi khai báo thì chỉ có thể gọi được
+ - trong class
+ - từ class kế thừa
+- không gọi được tù bên ngoài class
+* private : riêng tư - tất cả các thuộc tính và phương thức có từ khóa thì
+chỉ có thể gọi được bên trong chính class đó
+- không gọi từ bên ngoài class
+- không gọi từ class kế thừa được
+
+***
+class cha và class con
+class con kế thừa class cha
+trong OOP ; khi class con kế thừa class cha
+thì nó sẽ được sử dụng tất cả các thuộc tính và phương thức class cha đó
+
+ví dụ :
+vinfast kế thừa vingroup
+
+ví dụ kế thừa sử dụng tù khóa extends
+classCon extends classCha {
+
+}
+
