@@ -1,0 +1,4 @@
+hằng số trong class
+const
+hằng số khác biến số
+hằng số giá trị không đổi trong suốt quá trình chạy
