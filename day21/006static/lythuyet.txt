@@ -1,0 +1,19 @@
+***
+static method ( phương thức tĩnh )
+static property ( thuộc tính tĩnh )
+
+- khi muốn gọi đến 1 thuộc tính hay 1 phương thức trong 1 class
+ta bắt buộc phải khởi tạo object bằng từ khóa new
+sau đó mới gọi được đến phương thức hay thuộc tính
+
+$object1 = new ClassName();
+$object1->tenThuocTinh;
+$object1->TenPhuongThuc();
+
+- Nhưng phương thức và thuộc tính tĩnh cho phép ta gọi
+đến thuộc tĩnh và phương thức mà không cần khởi tạo đối tượng
+bằng cú pháp
+TenClass::TenThuocTinh
+TenClass::TenPhươngThuc()
+
+=> nhanh hơn
