@@ -1,0 +1,11 @@
+- Contructor là hàm khởi tạo của 1 class
+function __construct() {}
+chú ý có 2 dấu _ liên tiếp
+- Constructor được tự động gọi khi mà ta tạo ra 1 object từ class đó
+
+
+- Destructor là hàm hủy của 1 class
+giống như constructor thì desctructor sẽ tự động được gọi
+- Hàm hủy được tự động gọi đến khi có 2 trường hợp
+TH1 : hủy 1 object
+TH2 : mã script kết thúc
