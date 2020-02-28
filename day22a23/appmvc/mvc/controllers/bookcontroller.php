@@ -8,6 +8,16 @@ class BookController {
     public function indexAction() {
         echo "<br>" . __METHOD__;
 
+        $bookModel = new BookModel();
+
+        // index.php => route.php => controller ( gọi model )
+        // model trả dữ liệu cho controller => controller trả dữ liệu
+        // xuống view => view hiển thị
+
+        $books = $bookModel->getAll();
+
+        $a = "demo biến của controller";
+
         include_once BASE_PATH."/mvc/views/books/index.php";
     }
 

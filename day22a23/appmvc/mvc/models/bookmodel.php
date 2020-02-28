@@ -15,6 +15,13 @@ class BookModel extends Database {
     public function getAll() {
 
         $sql = "SELECT * FROM " . $this->table;
+
+        $stmt = $this->connection->prepare($sql);
+        $stmt->execute();
+
+        $data = $stmt->fetchAll();
+
+        return $data;
     }
 
     // lấy 1 bản ghi duy nhất trong CSDL

@@ -12,34 +12,32 @@
 </head>
 <body>
 
-
+<?php echo $a ?>
     <div class="container">
         <h2>Liệt kê sách</h2>
         <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
         <table class="table">
             <thead>
             <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
+                <th>Id</th>
+                <th>Tên</th>
+                <th>Giá</th>
+                <th>Hành động</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
-            </tr>
-            <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
+
+            <?php foreach($books as $bookItem) { ?>
+                <tr>
+                    <td><?php echo $bookItem['id'] ?></td>
+                    <td><?php echo $bookItem['product_name'] ?></td>
+                    <td><?php echo $bookItem['product_price'] ?></td>
+                    <td>
+                        <a href="<?php echo BASE_URL."/index.php?controller=book&action=edit&id=".$bookItem['id'] ?>" class="btn btn-warning">Sửa</a>
+                        <a href="<?php echo BASE_URL."/index.php?controller=book&action=delete&id=".$bookItem['id'] ?>" class="btn btn-danger">Xóa</a>
+                    </td>
+                </tr>
+            <?php } ?>
             </tbody>
         </table>
     </div>
