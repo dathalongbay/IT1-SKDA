@@ -1,7 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: admin
- * Date: 2/28/2020
- * Time: 6:21 PM
- */
+
+
+class Route {
+
+    /**
+     * map các đường dẫn trên url vào các controller tương ứng
+     */
+    public function run() {
+        echo __METHOD__; die;
+    }
+}
