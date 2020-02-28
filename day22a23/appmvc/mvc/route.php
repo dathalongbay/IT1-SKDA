@@ -38,13 +38,5 @@ class Route {
          */
 
 
-
-
-
-
-
-
-
-         die;
     }
 }

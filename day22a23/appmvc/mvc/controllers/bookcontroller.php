@@ -7,6 +7,8 @@ class BookController {
      */
     public function indexAction() {
         echo "<br>" . __METHOD__;
+
+        include_once BASE_PATH."/mvc/views/books/index.php";
     }
 
     /**
@@ -14,6 +16,8 @@ class BookController {
      */
     public function createAction() {
         echo "<br>" . __METHOD__;
+
+        include_once BASE_PATH."/mvc/views/books/create.php";
     }
 
     /**
@@ -21,6 +25,8 @@ class BookController {
      */
     public function editAction() {
         echo "<br>" . __METHOD__;
+
+        include_once BASE_PATH."/mvc/views/books/edit.php";
     }
 
     /**
@@ -28,6 +34,8 @@ class BookController {
      */
     public function deleteAction() {
         echo "<br>" . __METHOD__;
+
+        include_once BASE_PATH."/mvc/views/books/delete.php";
     }
 
 }
