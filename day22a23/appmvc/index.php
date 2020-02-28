@@ -23,6 +23,7 @@ include_once BASE_PATH."/mvc/route.php";
 include_once BASE_PATH."/mvc/models/database.php";
 
 // nạp các controller của ứng dụng
+include_once BASE_PATH."/mvc/controllers/indexcontroller.php";
 include_once BASE_PATH."/mvc/controllers/bookcontroller.php";
 
 // nạp các model của ứng dụng
