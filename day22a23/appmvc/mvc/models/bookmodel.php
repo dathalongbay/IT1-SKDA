@@ -36,6 +36,10 @@ class BookModel extends Database {
         $product_desc = $data["product_desc"];
         $product_price = $data["product_price"];
         $sql = "INSERT INTO " . $this->table . "(product_name, product_desc,product_price) VALUES ('$product_name', '$product_desc', $product_price)";
+
+        $response = $this->connection->exec($sql);
+
+        return $response;
     }
 
     // cập nhật vào bảng

@@ -15,7 +15,7 @@
 <?php echo $a ?>
     <div class="container">
         <h2>Liệt kê sách</h2>
-        <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
+        <p><a class="btn btn-info" href="<?php echo BASE_URL."/index.php?controller=book&action=create"?>">Thêm mới</a> </p>
         <table class="table">
             <thead>
             <tr>

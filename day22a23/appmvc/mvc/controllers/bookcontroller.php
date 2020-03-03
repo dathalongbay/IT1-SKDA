@@ -48,4 +48,32 @@ class BookController {
         include_once BASE_PATH."/mvc/views/books/delete.php";
     }
 
+
+    /**
+     * method lưu dữ liệu thêm mới sp
+     */
+    public function storeAction() {
+
+        $bookModel = new BookModel();
+
+        if (isset($_POST["product_name"]) && isset($_POST["product_name"]) && isset($_POST["product_price"])) {
+            $bookModel->insert($_POST);
+        }
+
+        header("Location: index.php?controller=book&action=index");
+        exit;
+    }
+
+    /**
+     * lưu trữ dữ liệu khi sửa
+     */
+    public function updateAction() {
+
+    }
+
+    /** xóa dữ liệu */
+    public function destroyAction() {
+
+    }
+
 }
