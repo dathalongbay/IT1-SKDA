@@ -36,6 +36,19 @@ class BookController {
     public function editAction() {
         echo "<br>" . __METHOD__;
 
+        $id = (int) $_GET["id"];
+        if ($id > 0) {
+            $bookModel = new BookModel();
+
+            $book = $bookModel->getSingle($id);
+
+            var_dump($book);
+
+            echo "<pre>";
+            print_r($book);
+            echo "</pre>";
+        }
+
         include_once BASE_PATH."/mvc/views/books/edit.php";
     }
 
@@ -69,6 +82,19 @@ class BookController {
      */
     public function updateAction() {
 
+
+        echo "<pre>";
+        print_r($_POST);
+        echo "</pre>";
+
+        $bookModel = new BookModel();
+
+        if (isset($_POST["id"]) && ($_POST["id"] > 0) && isset($_POST["product_name"]) && isset($_POST["product_name"]) && isset($_POST["product_price"])) {
+            $bookModel->update($_POST);
+
+            header("Location: index.php?controller=book&action=index");
+            exit;
+        }
     }
 
     /** xóa dữ liệu */

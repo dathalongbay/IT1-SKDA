@@ -14,23 +14,25 @@
 
 
 <div class="container">
-    <h2>Sửa sách</h2>
-    <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
-    <form action="/action_page.php">
+    <h2>Thêm sách</h2>
+    <form name="themsach" method="post" action="<?php echo BASE_URL."/index.php?controller=book&action=update" ?>">
+
+        <input type="hidden" name="id" value="<?php echo $book['id'] ?>">
+
         <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="form-control" placeholder="Enter email" id="email">
+            <label for="email">Tên sách</label>
+            <input type="text" class="form-control" name="product_name" placeholder="" value="<?php echo $book['product_name'] ?>">
         </div>
         <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+            <label for="email">Mô tả</label>
+            <input type="text" class="form-control" name="product_desc" placeholder="" value="<?php echo $book['product_desc'] ?>">
         </div>
-        <div class="form-group form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Remember me
-            </label>
+        <div class="form-group">
+            <label for="email">Giá sách</label>
+            <input type="text" class="form-control" name="product_price" placeholder="" value="<?php echo $book['product_price'] ?>">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <button type="submit" class="btn btn-primary">Sua sách</button>
     </form>
 </div>
 </body>

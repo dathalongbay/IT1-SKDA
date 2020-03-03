@@ -28,6 +28,15 @@ class BookModel extends Database {
     public function getSingle($id) {
 
         $sql = "SELECT * FROM " . $this->table . " WHERE id = " . $id;
+
+        $stmt = $this->connection->prepare($sql);
+        $stmt->execute();
+
+        $data = $stmt->fetchAll();
+
+        $single = $data[0];
+
+        return $single;
     }
 
     // thêm vào trong bảng
@@ -49,6 +58,15 @@ class BookModel extends Database {
         $product_desc = $data["product_desc"];
         $product_price = $data["product_price"];
         $sql = "UPDATE " . $this->table . " SET product_name='$product_name',product_desc='$product_desc', product_price =$product_price WHERE id=".$id;
+
+
+        // Bước 1 prepate mysql
+        $stmt = $this->connection->prepare($sql);
+
+        // Bước 2 thực hiện query
+        $stmt->execute();
+
+
 
     }
 
